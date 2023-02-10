@@ -1,0 +1,1 @@
+INSERT INTO barbearia.roles (id, active, created_by, created_date, last_modified_by, last_modified_date, description, name, role) VALUES (1, true, 'Rachid', '2023-02-10 14:11:07', 'Rachid', '2023-02-10 14:11:10', 'Role de Administrador', 'Admin', 'BARBEARIA_ROLE_ADMIN');

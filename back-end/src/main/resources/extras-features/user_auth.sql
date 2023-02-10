@@ -1,0 +1,1 @@
+INSERT INTO barbearia.user_auth (id, active, created_by, created_date, last_modified_by, last_modified_date, email, name, password, username) VALUES (1, true, 'Rachid', '2023-02-10 14:09:35', 'Rachid', '2023-02-10 14:09:41', 'lucasrachid@hotmail.com', 'Lucas Rachid Martins', '$2a$12$5f.SKK0SWXOogaIwCM0.POoTG7scBke0TPeiPBuI12WHXRE2vUI1u', 'admin');

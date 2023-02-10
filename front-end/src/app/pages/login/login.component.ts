@@ -8,6 +8,7 @@ import snackBarSuccessConfig from '../../components/snackBarSuccessConfig';
 import snackBarErrorConfig from '../../components/snackBarErrorConfig';
 import { Permissions } from '../../models/permissions';
 import User from '../../models/User';
+import { AuthService } from '../../services/authService';
 
 
 @Component({
@@ -32,57 +33,58 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder,
               private _snackBar: MatSnackBar,
               private router: Router,
-              private translateService: TranslateService) {
+              private translateService: TranslateService,
+              private authService: AuthService) {
   }
 
   ngOnInit(): void {
   }
 
   login() {
-    // this.loadingResponse = true;
-    //
-    // const {username, password} = this.loginForm.value;
-    // let user: User = new User();
-    // user.username = username!;
-    // user.password = password!;
-    //
-    // let validation = this.validateLoginAndPassword(user);
-    //
-    // if (validation === true) {
-    //   this.loadingResponse = false;
-    //   this.authService.login(user).subscribe(response => {
-    //     let token = response.object.jwt.access_token;
-    //     this.authService.setToken(token);
-    //
-    //     let roles: any[] = response.object.roles;
-    //
-    //     for (let i = 0; i < roles.length; i++) {
-    //
-    //       if (roles[i].role === Constants.BARBEARIA_ROLE_ADMIN) {
-    //         this.permissions.BARBEARIA_ROLE_ADMIN = "BARBEARIA_ROLE_ADMIN";
-    //       }
-    //
-    //       if (roles[i].role === Constants.BARBEARIA_ROLE_OBJECT_STORAGE) {
-    //         this.permissions.BARBEARIA_ROLE_OBJECT_STORAGE = "BARBEARIA_ROLE_OBJECT_STORAGE";
-    //       }
-    //
-    //     }
-    //
-    //     //Setar as roles do Usuário no Local Storage.
-    //     this.authService.setTokenRole(JSON.stringify(this.permissions));
-    //
-    //     let userAuthentication = this.authService.getUserByToken();
-    //
-    //     this.translateService.get(response.message).subscribe((translatedOrNot: string) => {
-    //       this._snackBar.open(translatedOrNot, "✖", snackBarSuccessConfig());
-    //     });
-    //
-    //     this.router.navigateByUrl('/home', {state: {token: userAuthentication}});
-    //   }, () => {
-    //   }, () => this.loadingResponse = false);
-    // }
-    //
-    // this.loadingResponse = false;
+    this.loadingResponse = true;
+
+    const {username, password} = this.loginForm.value;
+    let user: User = new User();
+    user.username = username!;
+    user.password = password!;
+
+    let validation = this.validateLoginAndPassword(user);
+
+    if (validation === true) {
+      this.loadingResponse = false;
+      this.authService.login(user).subscribe(response => {
+        let token = response.object.jwt.access_token;
+
+        let roles: any[] = response.object.roles;
+
+        for (let i = 0; i < roles.length; i++) {
+
+          if (roles[i].role === Constants.BARBEARIA_ROLE_ADMIN) {
+            this.permissions.BARBEARIA_ROLE_ADMIN = "BARBEARIA_ROLE_ADMIN";
+          }
+
+          if (roles[i].role === Constants.BARBEARIA_ROLE_OBJECT_STORAGE) {
+            this.permissions.BARBEARIA_ROLE_OBJECT_STORAGE = "BARBEARIA_ROLE_OBJECT_STORAGE";
+          }
+
+        }
+
+        let objectToLocalStorage = {token: token, roles: this.permissions};
+        this.authService.setInfoUserLocalStorage(JSON.stringify(objectToLocalStorage));
+
+        let userAuthentication = this.authService.getUserByToken();
+        console.log(userAuthentication);
+
+        this.translateService.get(response.message).subscribe((translatedOrNot: string) => {
+          this._snackBar.open(translatedOrNot, "✖", snackBarSuccessConfig());
+        });
+
+        this.router.navigateByUrl('/home', {state: {token: userAuthentication}});
+      }, () => {
+      }, () => this.loadingResponse = false);
+    }
+
+    this.loadingResponse = false;
 
 
   }
