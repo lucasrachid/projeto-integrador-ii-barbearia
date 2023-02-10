@@ -1,0 +1,51 @@
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #c6203d;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgb(198, 32, 61);
+}
+
+.password {
+  width: 15rem;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box {
+  height: 100vh;
+}
+
+.content-box {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 200px;
+}
+
+#progressBar {
+  height: 4rem;
+}
+
+mat-icon:hover {
+  opacity: 0.5;
+}
+
+mat-icon {
+  color: #c32a4c;
+}
+
+.img-logo {
+  margin: 0 25px -5px !important;
+}
+
+.login-cover {
+  background-image: url("https://fastcorpbr.com/wp-content/uploads/2019/04/reforma-de-barbearia.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.6;
+}

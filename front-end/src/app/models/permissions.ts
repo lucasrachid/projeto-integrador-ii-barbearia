@@ -1,0 +1,17 @@
+export class Permissions {
+
+  BARBEARIA_ROLE_ADMIN?: string;
+  BARBEARIA_ROLE_OBJECT_STORAGE?: string;
+
+  constructor(
+    BARBEARIA_ROLE_ADMIN?: string,
+    BARBEARIA_ROLE_OBJECT_STORAGE?: string
+  ) {
+    this.BARBEARIA_ROLE_ADMIN = BARBEARIA_ROLE_ADMIN;
+    this.BARBEARIA_ROLE_OBJECT_STORAGE = BARBEARIA_ROLE_OBJECT_STORAGE;
+  }
+}
+
+
+
+

@@ -1,0 +1,14 @@
+{
+  "LANGUAGES": {
+    "PORTUGUESE_BRAZIL": "Portuguese",
+    "ENGLISH": "English",
+    "SPANISH": "Spanish"
+  },
+  "TABLE": {
+    "END_RESULTS": "End of results"
+  },
+  "MESSAGES": {
+    "WRONG_PASSWORD": "Incorrect Password!"
+  }
+}
+

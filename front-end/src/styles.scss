@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.snackbar-error {
+  background: #c32a4c;
+  color: white;
+}
+
+.snackbar-success {
+  background: #47b544;
+  color: white;
+}
+
+// Propriedade para alterar as cores do Mat Button
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+  background-color: #c32a4c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888 !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+// Propriedade para alterar as cores do Mat Button Hover
+.mat-flat-button.mat-primary:hover, .mat-raised-button.mat-primary:hover, .mat-fab.mat-primary:hover, .mat-mini-fab.mat-primary:hover {
+  background-color: #c32a4c;
+  opacity: 0.7;
+}
+
+// Propriedade para alterar as cores do Mat Button focus e active
+.mat-flat-button.mat-primary:active, .mat-raised-button.mat-primary:active, .mat-fab.mat-primary:active, .mat-mini-fab.mat-primary:active,
+.mat-flat-button.mat-primary:focus-visible, .mat-raised-button.mat-primary:focus-visible, .mat-fab.mat-primary:focus-visible,
+.mat-mini-fab.mat-primary:focus-visible{
+  background-color: #c32a4c !important;
+  opacity: 0.7;
+}
+
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: #c32a4c;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: #c32a4c;
+}
+
+.mat-form-field-appearance-fill.mat-focused .mat-form-field-fill-thick {
+  color: #c32a4c !important;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-fill {
+  color: #c32a4c;
+  border-radius: 10px;
+}
+
+
+.mat-form-field-label {
+  color: grey;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: #c32a4c;
+}
+
+// Propriedade para alterar cor do "X" do Snackbar
+.mat-button-wrapper {
+  color: white;
+}
+
+.username, .password {
+  width: 250px !important;
+}
+
+// Propriedade para alterar cor do Spinner de Carregamento
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #c32a4c;
+}

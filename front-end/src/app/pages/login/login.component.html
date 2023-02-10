@@ -1,0 +1,48 @@
+<div class="d-flex">
+
+  <div class="col-7 login-cover">
+
+  </div>
+
+  <div class="col-5">
+    <div class="flex-box container-box">
+      <div class="d-flex align-middle justify-content-center">
+
+        <form [formGroup]="loginForm"
+              class="form mt-4 d-flex align-middle justify-content-center flex-column"
+              (ngSubmit)="login()">
+
+          <img [src]="this.logoString"
+               alt="Logotipo de Empresa Inovalegal, nas cores vermelha e roxa"
+               class="img-logo"
+               [width]="200"
+               title="Inovalegal - Consultoria e Legalização de Empresas">
+
+          <mat-form-field class="username" appearance="fill">
+            <mat-label>Usuário</mat-label>
+            <input id="username" matInput formControlName="username">
+            <mat-icon matSuffix>people</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="password" appearance="fill">
+            <mat-label>Senha</mat-label>
+            <input id="password" matInput formControlName="password" type="password">
+            <mat-icon matSuffix (click)="revealPassword()">
+              {{this.revealedPassword != null && !this.revealedPassword ? 'lock' : 'lock_open'}}
+            </mat-icon>
+          </mat-form-field>
+
+          <button type="submit" class="btn btn-primary btn-block" mat-flat-button color="primary">login</button>
+
+          <div id="progressBar">
+            <app-progress-bar *ngIf="this.loadingResponse"></app-progress-bar>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+

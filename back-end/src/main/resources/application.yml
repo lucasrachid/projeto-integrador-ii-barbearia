@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: projeto-integrador-ii-barbearia
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/barbearia
+    username: root
+    password: barbearia
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+auth:
+  jwt-secret: PROJETOINTEGRADORBARBEARIARV13D47F565B6DECC3N7R4L1Z4D0RV1AS0F7N3X74G336000000F1NT3C4HU3D47F565B6DEC
+  #24 horas
+  jwt-expiration-miliseg: 86400000
+  token-forgot-password: TLGqJAPC0UdCWceNoCeiIJKtwwBIey3G
+  public-sing-up-url-enable: false

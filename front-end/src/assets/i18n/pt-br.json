@@ -1,0 +1,20 @@
+{
+  "LANGUAGES": {
+    "PORTUGUESE_BRAZIL": "Português",
+    "ENGLISH": "Inglês",
+    "SPANISH": "Espanhol"
+  },
+  "TABLE": {
+    "END_RESULTS": "Final dos Resultados"
+  },
+  "MESSAGES": {
+    "LOGIN_SUCESS": "Usuário autenticado com sucesso",
+    "WRONG_PASSWORD": "Senha Incorreta!",
+    "USERNAME_REQUIRED": "Necessário informar o usuário",
+    "PASSWORD_REQUIRED": "Necessário informar a senha",
+    "PASSWORD_LENGHT_MIN": "Tamanho mínimo da senha é de 5 caracteres",
+    "PASSWORD_LENGHT_MAX": "Tamanho máximo da senha é de 100 caracteres",
+    "USERNAME_NOT_FOUND": "Usuário não encontrado",
+    "ERROR_LOGIN": "Erro na Autenticação"
+  }
+}

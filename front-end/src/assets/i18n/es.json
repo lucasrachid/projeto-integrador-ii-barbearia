@@ -1,0 +1,13 @@
+{
+  "LANGUAGES": {
+    "PORTUGUESE_BRAZIL": "Portugués",
+    "ENGLISH": "Inglés",
+    "SPANISH": "Español"
+  },
+  "TABLE": {
+    "END_RESULTS": "Fin de resultados"
+  },
+  "MESSAGES": {
+    "WRONG_PASSWORD": "Contraseña Incorrecta!"
+  }
+}
