@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InternationalizationService } from './components/internationalization.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Barbearia';
+
+  constructor(private internationalizationService: InternationalizationService) {
+    internationalizationService.initializeSystemTranslate();
+  }
 }
