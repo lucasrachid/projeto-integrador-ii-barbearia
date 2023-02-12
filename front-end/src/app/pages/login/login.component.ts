@@ -73,7 +73,6 @@ export class LoginComponent implements OnInit {
         this.authService.setInfoUserLocalStorage(JSON.stringify(objectToLocalStorage));
 
         let userAuthentication = this.authService.getUserByToken();
-        console.log(userAuthentication);
 
         this.translateService.get(response.message).subscribe((translatedOrNot: string) => {
           this._snackBar.open(translatedOrNot, "✖", snackBarSuccessConfig());
