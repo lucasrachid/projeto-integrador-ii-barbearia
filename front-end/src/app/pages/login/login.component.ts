@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {FormBuilder} from "@angular/forms";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {Router} from "@angular/router";
@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
 
   permissions: Permissions = new Permissions();
 
-  loadingResponse: boolean = false;
+  loadingResponse = false;
   revealedPassword: boolean = false;
 
   constructor(private formBuilder: FormBuilder,
@@ -51,7 +51,6 @@ export class LoginComponent implements OnInit {
     let validation = this.validateLoginAndPassword(user);
 
     if (validation === true) {
-      this.loadingResponse = false;
       this.authService.login(user).subscribe(response => {
         let token = response.object.jwt.access_token;
 
@@ -82,10 +81,6 @@ export class LoginComponent implements OnInit {
       }, () => {
       }, () => this.loadingResponse = false);
     }
-
-    this.loadingResponse = false;
-
-
   }
 
   revealPassword(){

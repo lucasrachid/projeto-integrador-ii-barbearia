@@ -27,9 +27,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    ProgressBarComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

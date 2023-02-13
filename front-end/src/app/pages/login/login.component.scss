@@ -1,9 +1,11 @@
+@import 'src/assets/scss/colors.scss';
+
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #c6203d;
+  border-color: $primary-color;
   outline: 0;
-  box-shadow: 0 0 0 0.1rem rgb(198, 32, 61);
+  box-shadow: 0 0 0 0.1rem $primary-color;
 }
 
 .password {
@@ -36,11 +38,18 @@ mat-icon:hover {
 }
 
 mat-icon {
-  color: #c32a4c;
+  color: $primary-color;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .img-logo {
   margin: 0 25px -5px !important;
+  width: 6.25rem !important;
 }
 
 .login-cover {
@@ -48,4 +57,8 @@ mat-icon {
   background-position: center;
   background-size: cover;
   opacity: 0.6;
+}
+
+.username, .password {
+  width: 250px !important;
 }
