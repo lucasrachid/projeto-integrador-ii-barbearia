@@ -11,12 +11,14 @@
         <form [formGroup]="loginForm"
               class="form mt-4 d-flex align-middle justify-content-center flex-column"
               (ngSubmit)="login()">
+          <div class="img-container">
+            <img [src]="this.logoString"
+                 alt="Logotipo da Barbearia"
+                 class="img-logo"
+                 [width]="200"
+                 title="Projeto Integrador II - Barbearia">
+          </div>
 
-          <img [src]="this.logoString"
-               alt="Logotipo da Barbearia"
-               class="img-logo"
-               [width]="200"
-               title="Projeto Integrador II - Barbearia">
 
           <mat-form-field class="username" appearance="fill">
             <mat-label>Usuário</mat-label>
@@ -35,7 +37,7 @@
           <button type="submit" class="btn btn-primary btn-block" mat-flat-button color="primary">Login</button>
 
           <div id="progressBar">
-            <app-progress-bar *ngIf="this.loadingResponse"></app-progress-bar>
+            <app-progress-bar *ngIf="loadingResponse"></app-progress-bar>
           </div>
 
         </form>
@@ -45,4 +47,3 @@
   </div>
 
 </div>
-

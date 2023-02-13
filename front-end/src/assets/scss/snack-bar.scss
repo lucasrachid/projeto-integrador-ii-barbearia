@@ -1,0 +1,20 @@
+.snackbar-error {
+  background: #c32a4c !important;
+  color: white !important;
+}
+
+.snackbar-success {
+  background: #47b544 !important;
+  color: white !important;
+}
+
+// Propriedade para alterar cor do "X" do Snackbar
+.mat-button-wrapper {
+  color: white !important;
+}
+
+.mat-mdc-snack-bar-container {
+  margin: 8px;
+  border-radius: 8px;
+  position: static;
+}
