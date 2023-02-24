@@ -6,7 +6,7 @@
 - JOILE JUNIOR (DEV)
 - YURI GAUZE (DEV)
 
-# Ojetivo do Software
+# Objetivo do Software
 
 O intuito  do software  é de facilitar o agendamento de serviços estéticos masculinos, buscando praticidade de modo online, facilitando a vida dos barbeiros e dos clientes. O cliente poderá agendar o horário que preferir e estiver à disposição quando quiser, não importa o horário ou o dia. Com isso, o atendimento não fica limitado ao funcionamento da sua barbearia sem que isso prejudique a sua vida pessoal. Outro ponto a ser considerado, é a flexibilização na agenda do barbeiro ou cliente, quando houver a necessidade de remarcar o horário do serviço.
 
