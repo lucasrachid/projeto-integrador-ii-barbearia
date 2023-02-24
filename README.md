@@ -1,3 +1,13 @@
+# NOME DOS INTEGRANTES
+- LUCAS RACHID (SCRUM)
+- GABRIELE SIQUEIRA (P.O.)
+- MARCOS FELIPE (DEV)
+- VINICIUS KOITE (DEV)
+- JOILE JUNIOR (DEV)
+- YURI GAUZE (DEV)
+
+
+
 # PASSOS PARA EXECUTAR O PROJETO
 
 ### 1 - Você deve criar em sua máquina local, um banco no MySQL, com nome de barbearia.
