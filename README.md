@@ -55,69 +55,53 @@ Para realizar o acesso no front, acessar `localhost:4200`
   <tr>
     <td align="center">
       <a href="http://github.com/JoileJr">
-        <img src="https://avatars.githubusercontent.com/u/105524292?v=4" width="100px;" alt="joile avatar"/><br>
+        <img src="https://avatars.githubusercontent.com/u/105524292?v=4" width="100px;" alt="Joile Junior"/><br>
         <sub>
-          <b>Joile Júnior</b>
+          <b>Joile Junior (Desenvolvedor)</b>
         </sub>
-       </a>
+      </a>
     </td>
-  </tr>
-  
-  <tr>
     <td align="center">
       <a href="http://github.com/lucasrachid">
-        <img src="https://avatars.githubusercontent.com/u/65245074?v=4" width="100px;" alt="rachid avatar"/><br>
+        <img src="https://avatars.githubusercontent.com/u/65245074?v=4" width="100px;" alt="Lucas Rachid"/><br>
         <sub>
-          <b>Lucas Rachid</b>
+          <b>Lucas Rachid (Scrum Master)</b>
         </sub>
-       </a>
+      </a>
     </td>
-  </tr>
-  
-  <tr>
     <td align="center">
       <a href="http://github.com/Marcossfel">
-        <img src="https://avatars.githubusercontent.com/u/92560161?v=4" width="100px;" alt="Marcos Felipe avatar"/><br>
+        <img src="https://avatars.githubusercontent.com/u/92560161?v=4" width="100px;" alt="Marcos Felipe"/><br>
         <sub>
-          <b>Marcos Felipe</b>
+          <b>Marcos Felipe (Desenvolvedor)</b>
         </sub>
-       </a>
+      </a>
     </td>
-  </tr>
-  
-  <tr>
     <td align="center">
       <a href="http://github.com/ViniciusKoiti">
-        <img src="https://avatars.githubusercontent.com/u/65818436?v=4" width="100px;" alt="Vinicius avatar"/><br>
+        <img src="https://avatars.githubusercontent.com/u/65818436?v=4" width="100px;" alt="Vinicius Koiti"/><br>
         <sub>
-          <b>Vinicius Koiti</b>
+          <b>Vinicius Koiti (Desenvolvedor)</b>
         </sub>
-       </a>
+      </a>
     </td>
-  </tr>
-  
-  <tr>
     <td align="center">
       <a href="http://github.com/yurigauze">
-        <img src="https://avatars.githubusercontent.com/u/97847334?v=4" width="100px;" alt="Yuri avatar"/><br>
+        <img src="https://avatars.githubusercontent.com/u/97847334?v=4" width="100px;" alt="Yuri Gauze"/><br>
         <sub>
-          <b>Yuri Gauze</b>
+          <b>Yuri Gauze (Desenvolvedor)</b>
         </sub>
-       </a>
+      </a>
     </td>
-  </tr>
-  
-  <tr>
     <td align="center">
       <a href="http://github.com/GabrielleKw">
-        <img src="https://avatars.githubusercontent.com/u/76081229?v=4" width="100px;" alt="Gabrielle avatar"/><br>
+        <img src="https://avatars.githubusercontent.com/u/76081229?v=4" width="100px;" alt="Gabrielle Siqueira"/><br>
         <sub>
-          <b>Gabrielle Siqueira</b>
+          <b>Gabrielle Siqueira (Product Owner)</b>
         </sub>
-       </a>
+      </a>
     </td>
   </tr>
-  
 </table>
  
 ## :dart: Status do projeto
