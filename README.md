@@ -30,4 +30,3 @@ Você deve acessar a pasta raiz do projeto front, que se encontra em `front-end`
 Para realizar o acesso no front, acessar `localhost:4200`
 
 # - Qualquer dúvida, pode entrar em contato pelo discord Rachid#1337.
-aa
