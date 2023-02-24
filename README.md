@@ -18,7 +18,7 @@ Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando 
 ### 1 - Você deve criar em sua máquina local, um banco no MySQL, com nome de barbearia.
 Sendo que o usuário para acesso, será root e a senha 'barbearia', caso você já tenha
 instalado o MySQL com outra senha, você deve entrar na pasta `src/main/resources/application.yml`
-e adaptar as infos do seu banco local.
+e adaptar as infos do seu banco local, você deve alterar as informações também na pasta `src/main/resources/Metalnf`.
 
 #### 1.1 - OBS
 Atualmente o sistema está sendo desenvolvido, então o banco não terá informações, 
